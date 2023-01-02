@@ -1,0 +1,10 @@
+train: ./train/images/
+test: ./test/images
+val: ./test/images
+#Classes
+nc: 1 # replace according to your number of classes
+#classes names
+#replace all class names list with your classes names
+names: ['Messi'] 
+
+#python train.py --weights yolov7-e6e.pt --data "data/custom.yaml" --workers 4 --batch-size 4 --img 1280 1280 --cfg cfg/training/yolov7-e6e.yaml --name yolov7-e6e --hyp data/hyp.scratch.p5.yaml
